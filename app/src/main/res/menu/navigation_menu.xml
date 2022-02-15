@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homePage"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/navMenu_home"
+            />
+        <item
+            android:id="@+id/nav_browse"
+            android:icon="@drawable/ic_search_24"
+            android:title="@string/navMenu_browse" />
+    </group>
+
+    <item
+        android:id="@+id/navSection_manageCourses"
+        android:title="إدارة بيانات التخصص">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_uploadDepartmentPlanPage"
+                    android:title="@string/navMenu_uploadDepPlan" />
+                <item
+                    android:id="@+id/nav_addCourse"
+                    android:icon="@drawable/ic_add_24"
+                    android:title="@string/navMenu_addCourse" />
+                <item
+                    android:id="@+id/nav_removeCourse"
+                    android:icon="@drawable/ic_remove_24"
+                    android:title="@string/navMenu_removeCourse" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navSection_logout"
+        android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="تسجيل الخروج"
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_logout_arrow_left_24"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

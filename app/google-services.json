@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315292532540",
+    "project_id": "nafea-storage",
+    "storage_bucket": "nafea-storage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315292532540:android:5836a3f61813401b3c2839",
+        "android_client_info": {
+          "package_name": "com.ksu.nafea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315292532540-cmj6mc8o354vn7c0cquv7g0d6jp7g0em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEzHHYsRXsmN6GsYwG8zdwAO26x5sACJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315292532540-cmj6mc8o354vn7c0cquv7g0d6jp7g0em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

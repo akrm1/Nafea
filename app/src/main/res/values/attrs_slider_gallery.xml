@@ -1,0 +1,18 @@
+<resources>
+    <declare-styleable name="SliderGallery">
+        <attr name="margins_side" format="integer"/>
+        <attr name="margins_tails" format="integer"/>
+
+        <attr name="icon_width" format="integer"/>
+        <attr name="icon_height" format="integer"/>
+        <attr name="icon_form" format="enum">
+            <enum name="full_form" value="0"/>
+            <enum name="text_form" value="1"/>
+            <enum name="image_form" value="2"/>
+        </attr>
+        <attr name="icon_corners_radius" format="integer"/>
+        <attr name="icon_edges_thickness" format="integer"/>
+        <attr name="icon_background_alpha" format="integer"/>
+        <attr name="icon_edges_alpha" format="integer"/>
+    </declare-styleable>
+</resources>

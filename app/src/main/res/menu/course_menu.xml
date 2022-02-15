@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/crsNav_comments"
+        android:title="@string/crsNav_label_comments" />
+
+    <item
+        android:id="@+id/crsNav_physMats"
+        android:title="@string/crsNav_label_physMats" />
+
+    <item
+        android:id="@+id/crsNav_videos"
+        android:title="@string/crsNav_label_videos" />
+
+    <item
+        android:id="@+id/crsNav_documents"
+        android:title="@string/crsNav_label_documents" />
+
+    <item
+        android:id="@+id/crsNav_aboutCourse"
+        android:title="@string/crsNav_label_aboutCrs" />
+
+</menu>

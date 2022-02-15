@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_homePage">
+
+
+    <fragment
+        android:id="@+id/nav_homePage"
+        android:name="com.ksu.nafea.ui.fragments.HomePageFragment"
+        android:label="@string/actionBarTitle_home"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_home_to_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_homePage_to_departmentPlanFragment"
+            app:destination="@id/nav_departmentPlanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_uploadDepartmentPlanPage"
+        android:name="com.ksu.nafea.ui.fragments.major_management.UploadDepartmentPlanFragment"
+        android:label="@string/actionBarTitle_depPlan"
+        tools:layout="@layout/fragment_upload_department_plan" >
+        <action
+            android:id="@+id/action_uploadDepartmentPlanPage_to_browse"
+            app:destination="@id/nav_browse" />
+        <action
+            android:id="@+id/action_uploadDepartmentPlanPage_to_homePage"
+            app:destination="@id/nav_homePage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.ksu.nafea.ui.fragments.LoginFragment"
+        android:label="@string/actionBarTitle_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/nav_homePage" />
+        <action
+            android:id="@+id/action_login_to_registerFirstStep"
+            app:destination="@id/nav_registerFirstStep" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_addCourse"
+        android:name="com.ksu.nafea.ui.fragments.major_management.AddCourseFragment"
+        android:label="@string/actionBarTitle_addCourse"
+        tools:layout="@layout/activity_add_course" >
+        <action
+            android:id="@+id/action_addCourse_to_browse"
+            app:destination="@id/nav_browse" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_removeCourse"
+        android:name="com.ksu.nafea.ui.fragments.major_management.DeleteCourseFragment"
+        android:label="@string/actionBarTitle_deleteCourse"
+        tools:layout="@layout/activity_delete_course" >
+        <action
+            android:id="@+id/action_removeCourse_to_browse"
+            app:destination="@id/nav_browse" />
+    </fragment>
+
+
+    <!-- Register -->
+    <fragment
+        android:id="@+id/nav_registerFirstStep"
+        android:name="com.ksu.nafea.ui.fragments.register.RegisterFirstStepFragment"
+        android:label="@string/actionBarTitle_register"
+        tools:layout="@layout/fragment_register_first_step" >
+        <action
+            android:id="@+id/action_registerFirstStep_to_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_registerFirstStep_to_registerSecondStep"
+            app:destination="@id/nav_registerSecondStep" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_registerSecondStep"
+        android:name="com.ksu.nafea.ui.fragments.register.RegisterSecondStepFragment"
+        android:label="@string/actionBarTitle_register"
+        tools:layout="@layout/fragment_register_second_step" >
+        <action
+            android:id="@+id/action_registerSecondStep_to_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_registerSecondStep_to_selectUniversity"
+            app:destination="@id/nav_selectUniversity" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_selectUniversity"
+        android:name="com.ksu.nafea.ui.fragments.browse.SelectUniversityFragment"
+        android:label="@string/actionBarTitle_selectUniversity"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectUniversity_to_selectCollege"
+            app:destination="@id/nav_selectCollege" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_browse"
+        android:name="com.ksu.nafea.ui.fragments.browse.SelectUniversityFragment"
+        android:label="@string/actionBarTitle_selectUniversity"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectUniversity_to_selectCollege"
+            app:destination="@id/nav_selectCollege" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_selectCollege"
+        android:name="com.ksu.nafea.ui.fragments.browse.SelectCollegeFragment"
+        android:label="@string/actionBarTitle_selectCollege"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectCollege_to_selectMajor"
+            app:destination="@id/nav_selectMajor" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_selectMajor"
+        android:name="com.ksu.nafea.ui.fragments.browse.SelectMajorFragment"
+        android:label="@string/actionBarTitle_selectMajor"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectMajor_to_majorPage"
+            app:destination="@id/nav_majorPage" />
+        <action
+            android:id="@+id/action_selectMajor_to_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_selectMajor_to_addCourse"
+            app:destination="@id/nav_addCourse" />
+        <action
+            android:id="@+id/action_selectMajor_to_removeCourse"
+            app:destination="@id/nav_removeCourse" />
+        <action
+            android:id="@+id/action_selectMajor_to_uploadDepartmentPlanPage"
+            app:destination="@id/nav_uploadDepartmentPlanPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_majorPage"
+        android:name="com.ksu.nafea.ui.fragments.browse.MajorPageFragment"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_majorPage_to_departmentPlan"
+            app:destination="@id/nav_departmentPlanFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_departmentPlanFragment"
+        android:name="com.ksu.nafea.ui.fragments.DepartmentPlanFragment"
+        tools:layout="@layout/fragment_department_plan" />
+
+
+</navigation>

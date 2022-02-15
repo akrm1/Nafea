@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.course.pmaterial.UploadPhysMatPage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/upldPhys_b_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/upldPhys_txt_name"
+                style="@style/Nafea_DefaultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="اسم المحتوى:"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/upldPhys_ed_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:hint="الاسم"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/upldPhys_txt_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_txt_name" />
+
+            <ImageView
+                android:id="@+id/upldPhys_img_photo"
+                android:layout_width="189dp"
+                android:layout_height="142dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_image_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_ed_name" />
+
+            <Button
+                android:id="@+id/upldPhys_b_choosePhoto"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="إختر صورة"
+                app:layout_constraintEnd_toEndOf="@+id/upldPhys_img_photo"
+                app:layout_constraintStart_toStartOf="@+id/upldPhys_img_photo"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_img_photo" />
+
+            <TextView
+                android:id="@+id/upldPhys_txt_price"
+                style="@style/Nafea_DefaultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="السعر:"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_b_choosePhoto" />
+
+            <EditText
+                android:id="@+id/upldPhys_ed_price"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:hint="السعر"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/upldPhys_txt_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_txt_price" />
+
+            <TextView
+                android:id="@+id/upldPhys_txt_phone"
+                style="@style/Nafea_DefaultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="رقم الجوال:"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_ed_price" />
+
+            <EditText
+                android:id="@+id/upldPhys_ed_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:hint="الرقم"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/upldPhys_txt_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_txt_phone" />
+
+            <TextView
+                android:id="@+id/upldPhys_txt_city"
+                style="@style/Nafea_DefaultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="المدينة:"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_ed_phone" />
+
+            <EditText
+                android:id="@+id/upldPhys_ed_city"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:hint="المدينة"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/upldPhys_txt_city"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_txt_city" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upldPhys_ed_city" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/upldPhys_b_post"
+        style="@style/Nafea_DefaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="نشر العرض"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

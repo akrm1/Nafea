@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/addCrs_txt_major"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="التخصص"
+        android:textColor="#686868"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_levelNum"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="right"
+        android:hint="3"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_levelNum"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_levelNum"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_levelNum" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_levelNum"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="رقم المستوى:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_edt_crsNum"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_edt_crsNum" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addCrs_edt_levelText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_edt_crsName" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_crsName"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/fieldHint_courseName"
+        android:inputType="textAutoCorrect"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_crsName"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_crsName"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_crsName" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_crsName"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/label_courseName"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_major" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_levelText"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/fieldHint_courseLevel"
+        android:inputType="textShortMessage"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_levelText"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_levelText"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_levelText" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_levelText"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_courseLevel"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_edt_crsSymbol"
+        app:layout_constraintStart_toEndOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_edt_crsSymbol" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_crsDesc"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/fieldHint_courseDescription"
+        android:inputType="textMultiLine"
+        android:maxLength="255"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_crsDesc"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_crsDesc"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_crsDesc" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_crsDesc"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_courseDesc"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_edt_levelText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_edt_levelNum"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_crsSymbol"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/fieldHint_courseSymbol"
+        android:inputType="text"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_crsSymbol"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_crsSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_crsSymbol" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_crsSymbol"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_courseSymbol"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_edt_crsName"
+        app:layout_constraintStart_toEndOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_edt_crsName" />
+
+    <EditText
+        android:id="@+id/addCrs_edt_crsNum"
+        style="@style/Nafea_DefaultTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="right"
+        android:hint="@string/fieldHint_courseNumber"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="@+id/addCrs_txt_crsNum"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_txt_crsNum"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_txt_crsNum" />
+
+    <TextView
+        android:id="@+id/addCrs_txt_crsNum"
+        style="@style/Nafea_DefaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_courseNumber"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintStart_toStartOf="@+id/addCrs_edt_crsName"
+        app:layout_constraintTop_toBottomOf="@+id/addCrs_edt_crsName" />
+
+    <Button
+        android:id="@+id/addCrs_b_add"
+        style="@style/Nafea_DefaultButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonText_addCourse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

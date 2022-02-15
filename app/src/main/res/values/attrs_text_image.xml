@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextImage">
+        <attr name="android:drawable"/>
+        <attr name="form" format="enum">
+            <enum name="full_Form" value="0"/>
+            <enum name="text_Form" value="1"/>
+            <enum name="image_Form" value="2"/>
+        </attr>
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textTopMargin" format="integer"/>
+        <attr name="textRightMargin" format="integer"/>
+        <attr name="textBottomMargin" format="integer"/>
+        <attr name="textLeftMargin" format="integer"/>
+        <attr name="textPosition" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="topRight" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="bottomRight" value="4"/>
+            <enum name="bottom" value="5"/>
+            <enum name="bottomLeft" value="6"/>
+            <enum name="left" value="7"/>
+            <enum name="topLeft" value="8"/>
+        </attr>
+        <attr name="textAreaPosition" format="enum">
+            <enum name="top" value="1"/>
+            <enum name="right" value="3"/>
+            <enum name="bottom" value="5"/>
+            <enum name="left" value="7"/>
+        </attr>
+        <attr name="textAreaColor" format="color"/>
+        <attr name="textAreaCoverage" format="integer"/>
+        <attr name="corners_radius" format="integer"/>
+        <attr name="corners_thickness" format="integer"/>
+        <attr name="corners_color" format="color"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+</resources>

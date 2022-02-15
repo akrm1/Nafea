@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.course.AboutCourseFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/aboutCrs_txt_crsName"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="الاسم" />
+
+                <TextView
+                    android:id="@+id/aboutCrs_txt_crsSymbol"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="20dp"
+                    android:text="الرمز" />
+
+                <TextView
+                    android:id="@+id/aboutCrs_txt_crsDesc"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="20dp"
+                    android:text="الوصف" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aboutCrs_staticTxt_crsEva"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="25dp"
+                    android:text="تقييم المقرر"
+                    android:textColor="#FF000000"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/aboutCrs_staticTxt_crsDifficulty"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="سهولة المقرر" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/aboutCrs_layout_crsEvaluations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1A3F51B5">
+
+                    <RelativeLayout
+                        android:id="@+id/aboutCrs_staticLayout_crsDiffculty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/aboutCrs_progress_crsDifficulty"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:progress="40"
+                            android:progressDrawable="@drawable/course_evaluation_progress_bar" />
+
+                        <TextView
+                            android:id="@+id/aboutCrs_txt_crsDifficulty"
+                            style="@style/Nafea_DefaultTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/aboutCrs_staticLayout_crsDiffculty">
+
+                        <TextView
+                            android:id="@+id/aboutCrs_staticTxt_crsContentSize"
+                            style="@style/Nafea_DefaultTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="مدى صغر محتوى المقرر" />
+
+                        <RelativeLayout
+                            android:id="@+id/aboutCrs_staticLayout_crsContentSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="50dp">
+
+                            <ProgressBar
+                                android:id="@+id/aboutCrs_progress_crsContentSize"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:progress="95"
+                                android:progressDrawable="@drawable/course_sub_evaulation_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/aboutCrs_txt_crsContentSize"
+                                style="@style/Nafea_DefaultTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0%"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/aboutCrs_staticTxt_crsAssignmentsDiff"
+                            style="@style/Nafea_DefaultTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="سهولة اعمال المقرر" />
+
+                        <RelativeLayout
+                            android:id="@+id/aboutCrs_staticLayout_crsAssignmentDiff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="50dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ProgressBar
+                                android:id="@+id/aboutCrs_progress_crsAssignmentsDiff"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:progress="40"
+                                android:progressDrawable="@drawable/course_sub_evaulation_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/aboutCrs_txt_crsAssignmentsDiff"
+                                style="@style/Nafea_DefaultTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0%"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/aboutCrs_staticTxt_crsEExamsEase"
+                            style="@style/Nafea_DefaultTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="سهولة الأختبارات" />
+
+                        <RelativeLayout
+                            android:id="@+id/aboutCrs_staticLayout_crsExamsEase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/aboutCrs_progress_crsExamsEase"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:progress="40"
+                                android:progressDrawable="@drawable/course_sub_evaulation_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/aboutCrs_txt_crsExamsEase"
+                                style="@style/Nafea_DefaultTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0%"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/aboutCrs_staticTxt_unkownEva"
+                style="@style/Nafea_DefaultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="غير معروف"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp">
+
+                <TextView
+                    android:id="@+id/aboutCrs_staticTxt_evaContentSize"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تقييمي لصغر محتوى المقرر"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/aboutCrs_rate_evaContentSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:theme="@style/Nafea_DefaultRatingStars"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_staticTxt_evaContentSize" />
+
+                <TextView
+                    android:id="@+id/aboutCrs_staticTxt_evaAssignmentsDiff"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تقييمي لسهولة اعمال المقرر"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_rate_evaContentSize" />
+
+                <RatingBar
+                    android:id="@+id/aboutCrs_rate_evaAssignmentsDiff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:theme="@style/Nafea_DefaultRatingStars"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_staticTxt_evaAssignmentsDiff" />
+
+                <TextView
+                    android:id="@+id/aboutCrs_staticTxt_evaExamsEase"
+                    style="@style/Nafea_DefaultTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تقييمي لسهولة اختبارات المقرر"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_rate_evaAssignmentsDiff" />
+
+                <RatingBar
+                    android:id="@+id/aboutCrs_rate_evaExamsEase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:theme="@style/Nafea_DefaultRatingStars"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_staticTxt_evaExamsEase" />
+
+                <Button
+                    android:id="@+id/aboutCrs_b_confirmEvaluation"
+                    style="@style/Nafea_DefaultButton"
+                    android:layout_width="117dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="24dp"
+                    android:text="حدث تقييمك"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCrs_rate_evaExamsEase" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

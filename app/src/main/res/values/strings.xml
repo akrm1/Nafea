@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">نافع</string>
+
+    <!-- Static Values -->
+    <string name="allOption">الكل</string>
+
+    <!-- Views Strings -->
+    <string name="label_email">الإيميل:</string>
+    <string name="label_confirmEmail">تأكيد الإيميل:</string>
+    <string name="label_password">الرمز السري:</string>
+    <string name="label_rePassword">تأكيد الرمز السري:</string>
+    <string name="label_firstName">الأسم الأول</string>
+    <string name="label_lastName">الأسم الأخير</string>
+    <string name="buttonText_next">التالي</string>
+    <string name="buttonText_cancel">إلغاء</string>
+    <string name="checkboxLabel_remember_me">تذكرني</string>
+    <string name="clickableText_createAccount"><u>إنشاء حساب جديد</u></string>
+    <string name="buttonText_login">تسجيل الدخول</string>
+    <string name="label_city">المدينة</string>
+    <string name="label_university">الجامعة</string>
+    <string name="label_collegeCategory">تصنيف الكلية (المسار)</string>
+    <string name="label_college">الكلية</string>
+    <string name="label_major">التخصص</string>
+    <string name="clickableText_downloadDepPlan">تحميل خطة القسم</string>
+    <string name="clickableText_showDepPlan">إظهار خطة القسم</string>
+    <string name="buttonText_addCourse">إضافة المقرر</string>
+    <string name="buttonText_removeCourse">إزالة المقرر</string>
+    <string name="label_courseName">اسم المقرر:</string>
+    <string name="label_courseSymbol">رمز المقرر:</string>
+    <string name="label_courseLevel">مستوى المقرر:</string>
+    <string name="label_courseDesc">وصف المقرر:</string>
+    <string name="label_courseNumber">رقم المقرر:</string>
+    <string name="fieldHint_courseName">اخلاقيات المهنة</string>
+    <string name="fieldHint_courseNumber">107</string>
+    <string name="fieldHint_courseSymbol">سلم</string>
+    <string name="fieldHint_courseLevel">الثالث</string>
+    <string name="fieldHint_courseDescription">اخلاقيات المهنة مقرر يحتوي على موضوعات عن الاخلاقيات المهمة في أي مهنة تمارس ومن هذي الموضوعات…</string>
+    <string name="buttonText_delete">حذف المقررات</string>
+    <string name="textButton_details">التفاصيل</string>
+    <string name="textButton_login">تسجيل الدخول</string>
+    <string name="label_courseEase">سهولة المقرر</string>
+
+
+    <!-- Course -->
+    <string name="crsNav_label_aboutCrs">عن المقرر</string>
+    <string name="crsNav_label_documents">الملفات</string>
+    <string name="crsNav_label_videos">الفيديو</string>
+    <string name="crsNav_label_physMats">المصادر الورقية</string>
+    <string name="crsNav_label_comments">التعليقات</string>
+    <string name="EMaterial_addContent">إضافة محتوى</string>
+    <string name="PMaterial_addContent">إضافة عملية بيع</string>
+
+
+    <!-- Titles -->
+    <string name="actionBarTitle_home">الرئيسية</string>
+    <string name="actionBarTitle_login">تسجيل الدخول</string>
+    <string name="actionBarTitle_register">إنشاء حساب جديد</string>
+    <string name="actionBarTitle_selectUniversity">إختر الجامعة</string>
+    <string name="actionBarTitle_selectCollege">إختر الكلية</string>
+    <string name="actionBarTitle_selectMajor">إختر التخصص</string>
+
+    <!-- Navigation Values -->
+    <string name="navMenu_home">الرئيسية</string>
+    <string name="navMenu_browse">تصفح</string>
+    <string name="navMenu_addCourse">إضافة مقرر</string>
+    <string name="navMenu_removeCourse">إزالة مقرر</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_drawer">نافع</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_course">CourseActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="toastMsg_loginFirst">يجب أن تسجل دخولك اولاً</string>
+    <string name="ematType_DocumentOption">ملف</string>
+    <string name="ematType_VideoOption">فيديو</string>
+    <string name="ematType_DocumentType">Document</string>
+    <string name="ematType_VideoType">Video</string>
+    <string name="material_deleted">تم إزالة المحتوى</string>
+    <string name="matReport_illegalType">هذا المحتوى غير قانوني</string>
+    <string name="matReport_similarType">هذا المحتوى مكرر</string>
+    <string name="matReport_otherType">غير ذلك</string>
+    <string name="ematReport_notAllowdReport">غير مسموح لك بالإبلاغ</string>
+    <string name="emat_notAllowedEvaluate">غير مسموح لك التقييم</string>
+    <string name="toastMsg_notAllowedComment">غير مسموح لك التعليق</string>
+    <string name="actionBarTitle_addCourse">إضافة مقرر</string>
+    <string name="actionBarTitle_deleteCourse">إزالة مقرر</string>
+    <string name="actionBarTitle_depPlan">إختيار خطة القسم</string>
+    <string name="navMenu_uploadDepPlan">رفع خطة تخصص</string>
+
+
+    <string-array name="Types">
+        <item>ملف</item>
+        <item>رابط</item>
+    </string-array>
+
+    <string-array name="Levels">
+        <item>المستوى الأول </item>
+        <item>المستوى الثاني</item>
+        <item>المستوى الثالث</item>
+        <item>المستوى الرابع</item>
+        <item>المستوى الخامس</item>
+        <item>المستوى السادس</item>
+        <item>المستوى السابع</item>
+        <item>المستوى الثامن</item>
+        <item>المستوى التاسع</item>
+        <item>المستوى العاشر</item>
+
+    </string-array>
+
+    <string-array name="reportTypes">
+        <item>من الصعب قراءة هذا المستند بسبب سوء الكتابة أو ضعف الجودة</item>
+        <item>تم رفع هذا المستند في مكان خاطئ</item>
+        <item>غير ذلك</item>
+    </string-array>
+
+    <string-array name="physreportTypes">
+        <item>الإعلان غير واضح</item>
+        <item>تم رفع هذا الإعلان في مكان خاطئ</item>
+        <item>غير ذلك</item>
+    </string-array>
+</resources>
